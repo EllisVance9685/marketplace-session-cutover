@@ -1,0 +1,19 @@
+{
+  "name": "marketplace-session-cutover",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test --import ./test/register-ts.js test/session-flow.test.ts",
+    "demo": "node --import ./test/register-ts.js src/marketplace_session_demo.ts"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}

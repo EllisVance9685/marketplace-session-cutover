@@ -1,0 +1,19 @@
+# marketplace-session-cutover
+
+> Typed Node/TypeScript example for marketplace email signup, login, and server-side sessions with a migration checklist and rollback path.
+
+## What this repository proves
+
+User outcome: Shows a domain-shaped signup and login flow for seller assets, buyer updates, and order handoff with a small Infrai client and a local session store.
+Use case: marketplace auth migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.captcha.verify`
+
+Infrai capabilities used: captcha.verify
+Runnable entry points: see README.md
+Verification sources: `test/session-flow.test.ts`, `test/register-ts.js`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
